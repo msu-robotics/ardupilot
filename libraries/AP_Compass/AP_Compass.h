@@ -499,6 +499,9 @@ private:
 #if AP_COMPASS_BMM350_ENABLED
         DRIVER_BMM350   =21,
 #endif
+#if AP_COMPASS_HWT905_ENABLED
+        DRIVER_HWT905   =22,
+#endif
 };
 
     bool _driver_enabled(enum DriverType driver_type);

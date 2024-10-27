@@ -30,6 +30,7 @@
 #include "AP_Compass_LIS3MDL.h"
 #include "AP_Compass_AK09916.h"
 #include "AP_Compass_QMC5883L.h"
+#include "AP_Compass_HWT905.h"
 #if AP_COMPASS_DRONECAN_ENABLED
 #include "AP_Compass_DroneCAN.h"
 #endif
@@ -1138,6 +1139,10 @@ void Compass::_probe_external_i2c_compasses(void)
     }
 #endif
 #endif  // AP_COMPASS_QMC5883L_ENABLED
+
+#if AP_COMPASS_HWT905_ENABLED
+    ADD_BACKEND(DRIVER_HWT905, AP_Compass_HWT905::probe();
+#endif
 
 #if AP_COMPASS_QMC5883P_ENABLED
     //external i2c bus
