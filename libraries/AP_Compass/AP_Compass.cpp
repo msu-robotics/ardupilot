@@ -1141,7 +1141,7 @@ void Compass::_probe_external_i2c_compasses(void)
 #endif  // AP_COMPASS_QMC5883L_ENABLED
 
 #if AP_COMPASS_HWT905_ENABLED
-    ADD_BACKEND(DRIVER_HWT905, AP_Compass_HWT905::probe();
+    ADD_BACKEND(DRIVER_HWT905, AP_Compass_HWT905::probe());
 #endif
 
 #if AP_COMPASS_QMC5883P_ENABLED
