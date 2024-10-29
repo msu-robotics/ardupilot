@@ -12,11 +12,10 @@ AP_Compass_Backend *AP_Compass_HWT905::probe()
     return new AP_Compass_HWT905();
 }
 
-//AP_Compass_HWT905AP_Compass_HWT905::AP_Compass_HWT905() : AP_Compass_Backend(_compass)
-//{
-//    // Инициализация
-//}
-
+AP_Compass_HWT905::AP_Compass_HWT905()
+{
+    // Инициализация
+}
 
 bool AP_Compass_HWT905::init()
 {
